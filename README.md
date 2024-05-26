@@ -7,8 +7,8 @@ This repository contains three implementations of the Tic Tac Toe game in C++:
 
 ## Table of Contents
 - [Tic Tac Toe](#tic-tac-toe)
-- [Tic Tac Toe with Minimax](#tictactoe_minimax)
-- [Tic Tac Toe with Minimax and Alpha-Beta Pruning](#tictactoe_alpha_beta_pruning)
+- [Tic Tac Toe with Minimax](#tic-tac-toe-with-minimax)
+- [Tic Tac Toe with Minimax and Alpha-Beta Pruning](#tic-tac-toe-with-minimax-and-alpha-beta-pruning)
 - [Big O Complexity](#big-o-complexity)
 
 ## Tic Tac Toe
