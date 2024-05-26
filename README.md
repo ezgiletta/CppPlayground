@@ -20,7 +20,7 @@ This is a basic implementation of the Tic Tac Toe game where two players (user v
 - The first player to get three of their symbols in a row (vertically, horizontally, or diagonally) wins the game.
 - If all cells are filled and no player has three in a row, the game is a tie.
 
-## tictactoe_minimax
+## Tic Tac Toe with Minimax
 This implementation includes an AI player using the Minimax algorithm.
 
 ### Logic
@@ -28,7 +28,7 @@ This implementation includes an AI player using the Minimax algorithm.
 - It simulates all possible moves, then backtracks to choose the move that maximizes the AI's chances of winning while minimizing the opponent's chances.
 - The algorithm evaluates the game tree up to the terminal states (win, tie).
 
-## tictactoe_alpha_beta_pruning
+## Tic Tac Toe with Minimax and Alpha-Beta Pruning
 This implementation enhances the Minimax algorithm with Alpha-Beta Pruning.
 
 ### Logic
