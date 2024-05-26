@@ -10,7 +10,6 @@ This repository contains three implementations of the Tic Tac Toe game in C++:
 - [Tic Tac Toe with Minimax](#tictactoe_minimax)
 - [Tic Tac Toe with Minimax and Alpha-Beta Pruning](#tictactoe_alpha_beta_pruning)
 - [Big O Complexity](#big-o-complexity)
-- [How to Run](#how-to-run)
 
 ## Tic Tac Toe
 This is a basic implementation of the Tic Tac Toe game where two players (user vs. computer or user vs. user) can play against each other.
@@ -40,17 +39,18 @@ This implementation enhances the Minimax algorithm with Alpha-Beta Pruning.
 ## Big O Complexity
 
 ### Tic Tac Toe
-- **Time Complexity:** \( O(1) \) for each move as the grid is always 3x3.
-- **Space Complexity:** \( O(1) \)
+- **Time Complexity:** `O(1)` for each move.
+- **Space Complexity:** `O(1)`
 
-### tictactoe_minimax
-- **Time Complexity:** \( O(b^d) \)
-  - \( b \): branching factor (in Tic Tac Toe, maximum 9)
-  - \( d \): depth of the game tree (in Tic Tac Toe, maximum 9)
-- **Space Complexity:** \( O(bd) \)
+### Minimax Algorithm for Tic Tac Toe
+- **Time Complexity:** `O(b^d)`
+  - `b`: branching factor (maximum 9)
+  - `d`: depth of the game tree (maximum 9)
+- **Space Complexity:** `O(bd)`
 
-### tictactoe_alpha_beta_pruning
-- **Time Complexity:** Best Case: \( O(b^{d/2}) \), Worst Case: \( O(b^d) \)
-  - \( b \): branching factor
-  - \( d \): depth of the game tree
-- **Space Complexity:** \( O(bd) \)
+### Alpha-Beta Pruning for Tic Tac Toe
+- **Time Complexity:**
+  - **Best Case:** `O(b^{d/2})`
+  - **Worst Case:** `O(b^d)`
+- **Space Complexity:** `O(bd)`
+
