@@ -66,12 +66,24 @@ bool checkWinCondition(const vector<vector<char>> &board){
     return false;
 }
 
+bool isBoardFull(const vector<vector<char>> &board) {
+    for (const auto& row : board) {
+        for (const auto& cell : row) {
+            if (cell == '-') {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 int main()
 {  
     int rows(3);
     int cols(3); 
     vector<vector<char>> board(rows, vector<char>(cols, '-'));
     bool win(false);
+    bool tie(false);
 
     char playerX('X');
     char playerO('O');
@@ -89,7 +101,8 @@ int main()
         return 1;
     }
     
-    while(!win){
+
+    while(!win && !tie){
 
         if(wrong_loc_count >= 5){
             cout << "Invalid location entered 5 times! Please start the game again!" << endl;
@@ -108,9 +121,13 @@ int main()
         }
         
         win = checkWinCondition(board);
+        tie = isBoardFull(board) && !win;
 
         if(win){
             cout << "Player " << player << " win. Congratulations!" << endl;
+        }
+        else if (tie) {
+            cout << "The game is a tie!" << endl;
         }
         else{
             player = (player == playerX) ? playerO : playerX;  
